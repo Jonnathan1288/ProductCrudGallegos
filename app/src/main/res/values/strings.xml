@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">productosCRUDGT</string>
+
+    <string name="title">Crud de Productos</string>
+    <string name="Crear">Create</string>
+    <string name="Modificar">Update</string>
+    <string name="Buscar">Search</string>
+    <string name="Eliminar">Delete</string>
+    <string name="Código">Código</string>
+    <string name="Nombre">Name</string>
+    <string name="Password">Precio</string>
+    <string name="Listar">List</string>
+</resources>
