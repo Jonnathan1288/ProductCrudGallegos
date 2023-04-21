@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp"
+    app:cardBackgroundColor="@color/colorGray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:src="@drawable/ic_person_black"
+            android:layout_marginTop="5dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="20dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/colorGray"
+            app:civ_border_overlay="true"/>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/moreBtn"
+            android:layout_toEndOf="@id/profileIv"
+            android:layout_toRightOf="@id/profileIv"
+            android:layout_toLeftOf="@id/moreBtn">
+
+            <!--name product-->
+            <TextView
+                android:id="@+id/codigoView"
+                android:text="nombre"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--cod product-->
+            <TextView
+                android:id="@+id/nombreView"
+                android:text="codigo"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--Cost product-->
+            <TextView
+                android:id="@+id/precioView"
+                android:text="precio"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--Fecha de Usuario-->
+
+        </LinearLayout>
+
+        <!--Para mostrar opciones como eliminar, editar, etc.-->
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/ic_more_black" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,5 +1,9 @@
 package com.gtmd.productoscrudgt;
 
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -26,12 +30,10 @@ public class MainActivity extends AppCompatActivity {
         btnlo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), gestionm.class);
-                startActivity(intent);
-/*
+
                 try {
                     if(user.getText().toString().equals("admin") && pass.getText().toString().equals("admin")){
-                        Intent intent = new Intent(getApplicationContext(), gestionm.class);
+                        Intent intent = new Intent(getApplicationContext(), Menusl.class);
                         startActivity(intent);
 
                     }else{
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }catch (Exception e){
                     Toast.makeText(MainActivity.this, "err -> "+e.getMessage(), Toast.LENGTH_SHORT).show();
-                }*/
+                }
 
             }
         });
